@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84803BD017DC39FD0021AA1F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84803BCF17DC39FD0021AA1F /* UIKit.framework */; };
+		84803BD217DC39FD0021AA1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84803BD117DC39FD0021AA1F /* Foundation.framework */; };
+		84803BD417DC39FD0021AA1F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84803BD317DC39FD0021AA1F /* CoreGraphics.framework */; };
+		84803BDA17DC39FD0021AA1F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84803BD817DC39FD0021AA1F /* InfoPlist.strings */; };
+		84803BDC17DC39FD0021AA1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84803BDB17DC39FD0021AA1F /* main.m */; };
+		84803BE017DC39FD0021AA1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84803BDF17DC39FD0021AA1F /* AppDelegate.m */; };
+		84803BE217DC39FD0021AA1F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 84803BE117DC39FD0021AA1F /* Default.png */; };
+		84803BE417DC39FD0021AA1F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84803BE317DC39FD0021AA1F /* Default@2x.png */; };
+		84803BE617DC39FD0021AA1F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84803BE517DC39FD0021AA1F /* Default-568h@2x.png */; };
+		84803BE917DC39FD0021AA1F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84803BE817DC39FD0021AA1F /* ViewController.m */; };
+		84803BEC17DC39FD0021AA1F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84803BEA17DC39FD0021AA1F /* ViewController.xib */; };
+		84803BFA17DC3D6A0021AA1F /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84803BF917DC3D6A0021AA1F /* AddressBook.framework */; };
+		84803C0017DC65850021AA1F /* ABContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 84803BFD17DC65850021AA1F /* ABContact.m */; };
+		84803C0117DC65850021AA1F /* ABContactClone.m in Sources */ = {isa = PBXBuildFile; fileRef = 84803BFF17DC65850021AA1F /* ABContactClone.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		84803BCC17DC39FD0021AA1F /* MIABcontact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MIABcontact.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84803BCF17DC39FD0021AA1F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		84803BD117DC39FD0021AA1F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84803BD317DC39FD0021AA1F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		84803BD717DC39FD0021AA1F /* MIABcontact-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MIABcontact-Info.plist"; sourceTree = "<group>"; };
+		84803BD917DC39FD0021AA1F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84803BDB17DC39FD0021AA1F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84803BDD17DC39FD0021AA1F /* MIABcontact-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MIABcontact-Prefix.pch"; sourceTree = "<group>"; };
+		84803BDE17DC39FD0021AA1F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84803BDF17DC39FD0021AA1F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84803BE117DC39FD0021AA1F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		84803BE317DC39FD0021AA1F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		84803BE517DC39FD0021AA1F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		84803BE717DC39FD0021AA1F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		84803BE817DC39FD0021AA1F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		84803BEB17DC39FD0021AA1F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		84803BF917DC3D6A0021AA1F /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		84803BFC17DC65850021AA1F /* ABContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABContact.h; sourceTree = "<group>"; };
+		84803BFD17DC65850021AA1F /* ABContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABContact.m; sourceTree = "<group>"; };
+		84803BFE17DC65850021AA1F /* ABContactClone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABContactClone.h; sourceTree = "<group>"; };
+		84803BFF17DC65850021AA1F /* ABContactClone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABContactClone.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84803BC917DC39FD0021AA1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84803BFA17DC3D6A0021AA1F /* AddressBook.framework in Frameworks */,
+				84803BD017DC39FD0021AA1F /* UIKit.framework in Frameworks */,
+				84803BD217DC39FD0021AA1F /* Foundation.framework in Frameworks */,
+				84803BD417DC39FD0021AA1F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84803BC317DC39FD0021AA1F = {
+			isa = PBXGroup;
+			children = (
+				84803BFB17DC65850021AA1F /* ABContactClone */,
+				84803BD517DC39FD0021AA1F /* MIABcontact */,
+				84803BCE17DC39FD0021AA1F /* Frameworks */,
+				84803BCD17DC39FD0021AA1F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84803BCD17DC39FD0021AA1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84803BCC17DC39FD0021AA1F /* MIABcontact.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84803BCE17DC39FD0021AA1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84803BF917DC3D6A0021AA1F /* AddressBook.framework */,
+				84803BCF17DC39FD0021AA1F /* UIKit.framework */,
+				84803BD117DC39FD0021AA1F /* Foundation.framework */,
+				84803BD317DC39FD0021AA1F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84803BD517DC39FD0021AA1F /* MIABcontact */ = {
+			isa = PBXGroup;
+			children = (
+				84803BDE17DC39FD0021AA1F /* AppDelegate.h */,
+				84803BDF17DC39FD0021AA1F /* AppDelegate.m */,
+				84803BE717DC39FD0021AA1F /* ViewController.h */,
+				84803BE817DC39FD0021AA1F /* ViewController.m */,
+				84803BEA17DC39FD0021AA1F /* ViewController.xib */,
+				84803BD617DC39FD0021AA1F /* Supporting Files */,
+			);
+			path = MIABcontact;
+			sourceTree = "<group>";
+		};
+		84803BD617DC39FD0021AA1F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84803BD717DC39FD0021AA1F /* MIABcontact-Info.plist */,
+				84803BD817DC39FD0021AA1F /* InfoPlist.strings */,
+				84803BDB17DC39FD0021AA1F /* main.m */,
+				84803BDD17DC39FD0021AA1F /* MIABcontact-Prefix.pch */,
+				84803BE117DC39FD0021AA1F /* Default.png */,
+				84803BE317DC39FD0021AA1F /* Default@2x.png */,
+				84803BE517DC39FD0021AA1F /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84803BFB17DC65850021AA1F /* ABContactClone */ = {
+			isa = PBXGroup;
+			children = (
+				84803BFC17DC65850021AA1F /* ABContact.h */,
+				84803BFD17DC65850021AA1F /* ABContact.m */,
+				84803BFE17DC65850021AA1F /* ABContactClone.h */,
+				84803BFF17DC65850021AA1F /* ABContactClone.m */,
+			);
+			path = ABContactClone;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84803BCB17DC39FD0021AA1F /* MIABcontact */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84803BEF17DC39FD0021AA1F /* Build configuration list for PBXNativeTarget "MIABcontact" */;
+			buildPhases = (
+				84803BC817DC39FD0021AA1F /* Sources */,
+				84803BC917DC39FD0021AA1F /* Frameworks */,
+				84803BCA17DC39FD0021AA1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MIABcontact;
+			productName = MIABcontact;
+			productReference = 84803BCC17DC39FD0021AA1F /* MIABcontact.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84803BC417DC39FD0021AA1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Mobile Injector";
+			};
+			buildConfigurationList = 84803BC717DC39FD0021AA1F /* Build configuration list for PBXProject "MIABcontact" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 84803BC317DC39FD0021AA1F;
+			productRefGroup = 84803BCD17DC39FD0021AA1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84803BCB17DC39FD0021AA1F /* MIABcontact */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84803BCA17DC39FD0021AA1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84803BDA17DC39FD0021AA1F /* InfoPlist.strings in Resources */,
+				84803BE217DC39FD0021AA1F /* Default.png in Resources */,
+				84803BE417DC39FD0021AA1F /* Default@2x.png in Resources */,
+				84803BE617DC39FD0021AA1F /* Default-568h@2x.png in Resources */,
+				84803BEC17DC39FD0021AA1F /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84803BC817DC39FD0021AA1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84803BDC17DC39FD0021AA1F /* main.m in Sources */,
+				84803BE017DC39FD0021AA1F /* AppDelegate.m in Sources */,
+				84803BE917DC39FD0021AA1F /* ViewController.m in Sources */,
+				84803C0017DC65850021AA1F /* ABContact.m in Sources */,
+				84803C0117DC65850021AA1F /* ABContactClone.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84803BD817DC39FD0021AA1F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84803BD917DC39FD0021AA1F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		84803BEA17DC39FD0021AA1F /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84803BEB17DC39FD0021AA1F /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84803BED17DC39FD0021AA1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84803BEE17DC39FD0021AA1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84803BF017DC39FD0021AA1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MIABcontact/MIABcontact-Prefix.pch";
+				INFOPLIST_FILE = "MIABcontact/MIABcontact-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		84803BF117DC39FD0021AA1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MIABcontact/MIABcontact-Prefix.pch";
+				INFOPLIST_FILE = "MIABcontact/MIABcontact-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84803BC717DC39FD0021AA1F /* Build configuration list for PBXProject "MIABcontact" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84803BED17DC39FD0021AA1F /* Debug */,
+				84803BEE17DC39FD0021AA1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84803BEF17DC39FD0021AA1F /* Build configuration list for PBXNativeTarget "MIABcontact" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84803BF017DC39FD0021AA1F /* Debug */,
+				84803BF117DC39FD0021AA1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84803BC417DC39FD0021AA1F /* Project object */;
+}

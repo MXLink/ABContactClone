@@ -59,8 +59,8 @@
                     for (NSInteger i = 0; i < [allPeople count]; i++) {
                         ABRecordRef record = (__bridge ABRecordRef)[allPeople objectAtIndex:i];
                         NSString *firstname = (__bridge_transfer NSString*)ABRecordCopyValue(record, kABPersonFirstNameProperty);
-                        NSString *middlename = (__bridge_transfer NSString*)ABRecordCopyValue(record, kABPersonFirstNameProperty);
-                        NSString *lastname = (__bridge_transfer NSString*)ABRecordCopyValue(record, kABPersonFirstNameProperty);
+                        NSString *middlename = (__bridge_transfer NSString*)ABRecordCopyValue(record, kABPersonMiddleNameProperty);
+                        NSString *lastname = (__bridge_transfer NSString*)ABRecordCopyValue(record, kABPersonLastNameProperty);
                         
                         NSMutableArray *phones = nil;
                         ABMultiValueRef abphones = ABRecordCopyValue(record, kABPersonPhoneProperty);

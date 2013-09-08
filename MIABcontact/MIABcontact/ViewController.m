@@ -10,7 +10,10 @@
 #import "ABContactClone.h"
 #import "ABContact.h"
 
-@interface ViewController ()
+@interface ViewController () <UITableViewDataSource, UITableViewDelegate>{
+    IBOutlet UITableView *_tableView;
+    NSMutableArray *_contacts;
+}
 
 @end
 
@@ -20,11 +23,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    [[ABContactClone shared] allContacts:^(NSArray *result, NSError *error) {        
-        for (ABContact *contact in result) {
-            NSLog(@"name : %@ phone: %@", contact.firstname, contact.phonesString);
+    self.title = @"ABContactClone";
+    [[ABContactClone shared] allContacts:^(NSArray *result, NSError *error) {
+        if (!error) {
+            _contacts = [NSMutableArray arrayWithArray:result];
         }
-        NSLog(@"Search : %@", [[ABContactClone shared] contactsWithPhoneNo:@"(707) 555-1854"]);
+        [_tableView reloadData];
     }];
 }
 
@@ -32,6 +36,25 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return [_contacts count];
+}
+
+- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *cellId = @"CellID";
+    UITableViewCell *cell = (UITableViewCell*)[tableView dequeueReusableCellWithIdentifier:cellId];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellId];
+        cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+    }
+    
+    ABContact *contact = [_contacts objectAtIndex:indexPath.row];
+cell.textLabel.text = [NSString stringWithFormat:@"%@ %@", contact.firstname?contact.firstname:@"", contact.lastname?contact.lastname:@""];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", contact.phonesString?contact.phonesString:@""];
+
+return cell;
 }
 
 @end
